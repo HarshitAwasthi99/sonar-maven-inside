@@ -22,4 +22,4 @@ jobs:
           
     - name: Build with Maven
       run: cd maven-basic
-    - run: mvn clean install sonar:sonar -Dsonar.login=43f37d7546c4f8b48ae085419ed4e1f9e887e9e8 
+    - run: mvn -B package --file ./maven-basic/pom.xml
