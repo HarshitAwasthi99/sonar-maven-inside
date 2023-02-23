@@ -35,13 +35,7 @@ jobs:
             #-Dsonar.tests= # optional. For more info about Code Coverage, please refer to https://docs.sonarcloud.io/enriching/test-coverage/overview/
             # Adds more detail to both client and server-side analysis logs, activating DEBUG mode for the scanner, and adding client-side environment variables and system properties to the server-side log of analysis report processing.
             #-Dsonar.verbose= # optional, default is false
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-        java-version: '11'
-        distribution: 'temurin'
-          
-      - name: Build with Maven
+      - name: jk
         run: cd maven-basic
       - run: mvn clean install --file ./maven-basic/pom.xml sonar:sonar -Dsonar.login=4a48df7f7b518facc8744d6e33294fbc3f784f9c
             
