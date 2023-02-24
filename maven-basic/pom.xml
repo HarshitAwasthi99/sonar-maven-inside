@@ -53,16 +53,7 @@
 
   <profiles>
     <profile>
-      <id>coverage</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-                <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                <sonar.host.url>
-                  http://23.102.159.162:9000
-                </sonar.host.url>
-      </properties>       
+      <id>coverage</id>      
       <build>
         <plugins>
           <plugin>
