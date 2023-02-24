@@ -22,4 +22,4 @@ jobs:
           
     - name: Build with Maven
       run: cd maven-basic
-    - run: mvn sonar:sonar -Dsonar.login=4a48df7f7b518facc8744d6e33294fbc3f784f9c -Dsonar.host.url=http://23.102.159.162:9000 -Dsonar.projectKey=harshit1 
+    - run: mvn clean install --file ./maven-basic/pom.xml sonar:sonar -Dsonar.login=4a48df7f7b518facc8744d6e33294fbc3f784f9c -Dsonar.host.url=http://23.102.159.162:9000 -Dsonar.projectKey=harshit1 
