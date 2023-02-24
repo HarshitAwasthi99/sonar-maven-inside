@@ -20,7 +20,7 @@ jobs:
         with:
              host: http://23.102.159.162:9000   
              login: 4a48df7f7b518facc8744d6e33294fbc3f784f9c 
-             projectBaseDir: "/home/runner/work/sonar-maven-inside/sonar-maven-inside/maven-basic"
+             projectBaseDir: "/home/runner/work/sonar-maven-inside/sonar-maven-inside/maven-basic/src"
              projectKey: "harshit1"
         
     
