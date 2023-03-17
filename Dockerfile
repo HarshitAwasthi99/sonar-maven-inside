@@ -3,7 +3,8 @@ RUN java -version
 COPY . /usr/src/myapp/
 WORKDIR /usr/src/myapp/
 RUN apk --no-cache add maven && mvn --version
-RUN mvn install --file ./maven-basic/pom.xm
+RUN cd maven-basic
+RUN mvn install --file pom.xm
 
 FROM maven
 WORKDIR /root/
