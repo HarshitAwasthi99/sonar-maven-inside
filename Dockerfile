@@ -7,6 +7,6 @@ RUN mvn install --file pom.xml
 
 FROM maven
 WORKDIR /root/
-COPY --from=builder /usr/src/myapp/targets/sonarscanner-maven-basic-1.0-SNAPSHOT.jar .
+COPY --from=builder /usr/src/myapp/target/sonarscanner-maven-basic-1.0-SNAPSHOT.jar .
 ENTRYPOINT ["java", "-jar", "sonarscanner-maven-basic-1.0-SNAPSHOT.jar"]
 
